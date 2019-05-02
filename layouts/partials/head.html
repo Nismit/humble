@@ -20,6 +20,7 @@
   {{ range .AlternativeOutputFormats -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css" media="all">
   {{ if getenv "PRODUCTION" }}
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90679064-2"></script>
