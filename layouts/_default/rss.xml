@@ -2,7 +2,7 @@
 	<channel>
 		<title>{{ .Site.Title }}</title>
 		<link>{{ .Permalink }}</link>
-		<description>Recent content {{ with .Title }}in {{.}} {{ end }}on {{ .Site.Title }}</description>
+		<description>{{ with .Site.Params.description }}{{.}}{{ end }}</description>
 		<generator>Hugo -- gohugo.io</generator>
 		{{ with .Site.LanguageCode }}
 		<language>{{.}}</language>
@@ -25,7 +25,7 @@
 			<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>
 			{{end}}
 			<guid>{{ .Permalink }}</guid>
-			<description>{{ .Summary | html }}</description>
+			<description>{{ `<![CDATA[` | safeHTML }}{{ if .Params.eyecatch }}<img src="{{ .Params.eyecatch }}">{{ else }}<img src="{{ .Site.BaseURL }}images/og_image.jpg">{{ end }}{{ .Params.description }}]]></description>
 		</item>
 		{{ end }}
 	</channel>

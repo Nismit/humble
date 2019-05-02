@@ -1,23 +1,22 @@
 <footer>
-      <ul class="socialList">
-            {{ with .OutputFormats.Get "rss" -}}
-            <li class="socialList__item">
-                  {{ printf `<a href="%s" rel="%s"><svg class="icon -small"><use xlink:href="#icon-feed" /></svg></a>` .Rel .Permalink | safeHTML }}
-            </li>
-            {{ end -}}
-            <li class="socialList__item"><a href="https://twitter.com/nismit_" target="_blank"><svg class="icon -small">
-                              <use xlink:href="#icon-twitter" /></svg></a></li>
-            <li class="socialList__item"><svg class="icon -small -heart">
-                        <use xlink:href="#icon-heart" /></svg></li>
-            <li class="socialList__item"><a href="https://github.com/Nismit" target="_blank"><svg class="icon -small">
-                              <use xlink:href="#icon-github" /></svg></a></li>
-            <li class="socialList__item"><a href="https://ca.linkedin.com/in/nismit" target="_blank"><svg
-                              class="icon -small">
-                              <use xlink:href="#icon-linkedin" /></svg></a></li>
-      </ul>
+  <ul class="socialList">
+    {{ with .OutputFormats.Get "rss" -}}
+    <li class="socialList__item">
+      {{ printf `<a href="%s" rel="%s"><svg class="icon -small"><use xlink:href="#icon-feed" /></svg></a>` .Rel .Permalink | safeHTML }}
+    </li>
+    {{ end -}}
+    <li class="socialList__item"><a href="https://twitter.com/nismit_" target="_blank"><svg class="icon -small">
+          <use xlink:href="#icon-twitter" /></svg></a></li>
+    <li class="socialList__item"><svg class="icon -small -heart">
+        <use xlink:href="#icon-heart" /></svg></li>
+    <li class="socialList__item"><a href="https://github.com/Nismit" target="_blank"><svg class="icon -small">
+          <use xlink:href="#icon-github" /></svg></a></li>
+    <li class="socialList__item"><a href="https://ca.linkedin.com/in/nismit" target="_blank"><svg class="icon -small">
+          <use xlink:href="#icon-linkedin" /></svg></a></li>
+  </ul>
 
-      <p class="copyright">&copy; 2017 - NISLOG<br>
-            Created with <svg class="icon -ex-small -heart">
-                  <use xlink:href="#icon-heart" /></svg> | Powered by <a href="https://gohugo.io/"
-                  tagert="_blank">Hugo</a></p>
+  <p class="copyright">&copy; 2017 -
+    <script>document.write(new Date().getFullYear());</script> NISLOG<br>
+    Created with <svg class="icon -ex-small -heart">
+      <use xlink:href="#icon-heart" /></svg> | Powered by <a href="https://gohugo.io/" tagert="_blank">Hugo</a></p>
 </footer>
