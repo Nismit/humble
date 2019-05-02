@@ -1,0 +1,58 @@
+//
+// _pagenation.scss
+// style for pagenation
+//
+
+.pager {
+  text-align: center;
+  margin: 2em 0;
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    border: 1px solid $_base-border-color;
+    padding: .5em .8em;
+
+    &:hover {
+      background-color: $_tertiary-font-colors;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  .active > &__link {
+    background-color: $_tertiary-font-colors;
+    color: #fff;
+  }
+}
+
+.pager-single {
+  // display: flex;
+  margin: 0 1em;
+
+  &__item {
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid $_base-border-color;
+
+    &:first-child {
+      border-top: 1px solid $_base-border-color;
+    }
+
+    &:hover {
+      text-decoration: none;
+      background-color: #fafafa;
+    }
+  }
+
+  &__label {
+    margin: 0;
+    color: $_base-font-color;
+  }
+
+  &__title {
+    margin: 0;
+  }
+}

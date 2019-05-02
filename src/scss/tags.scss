@@ -1,0 +1,74 @@
+//
+// _tags.scss
+// style for tags
+//
+
+.tagBlock {
+  margin: 1.5em 1em;
+
+  &__title {
+
+  }
+
+  &__list {
+    &__item {
+      display: inline-block;
+      margin: .3em .1em;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: .4em .8em;
+    border: 2px solid $_base-border-color;
+    font-size: .9rem;
+    text-decoration: none;
+    position: relative;
+    outline: none;
+    transition: all .2s;
+    // color: $_base-font-color;
+    color: $_primary-font-color;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      width: 0;
+      height: 0;
+      border: 2px solid transparent;
+      box-sizing: content-box;
+    }
+
+    &:before {
+      top: -2px;
+      left: -2px;
+    }
+
+    &:after {
+      bottom: -2px;
+      right: -2px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: $_tertiary-font-colors;
+
+      &:before, &:after {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:before {
+        border-bottom-color: $_tertiary-font-colors;
+        border-left-color: $_tertiary-font-colors;
+        transition: height .3s, width .3s .3s;
+      }
+
+      &:after {
+        border-top-color: $_tertiary-font-colors;
+        border-right-color: $_tertiary-font-colors;
+        transition: height .3s, width .3s .3s;
+      }
+    }
+  }
+}
