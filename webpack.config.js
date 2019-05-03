@@ -1,9 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserJSPlugin = require('terser-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = (env, argv) => ({
-  entry: { 
+  entry: {
     bundle: './src/js/index.js'
   },
 
@@ -22,6 +24,10 @@ module.exports = (env, argv) => ({
     contentBase: path.join(__dirname, 'static'),
     compress: true,
     port: 8080
+  },
+
+  optimization: {
+    minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
   },
 
   module: {
