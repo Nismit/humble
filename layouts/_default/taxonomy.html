@@ -1,17 +1,15 @@
-{{ define "title" }}{{ .Title }} | {{ end }}
-
 {{ define "main" }}
-  <h1 style="text-align: center;">Tag: {{ .Title }}</h1>
+<h1 style="text-align: center;">Tag: {{ .Title }}</h1>
 
-  {{ range (.Paginator 10).Pages }}
-    {{ .Render "li" }}
-  {{ end }}
+{{ range (.Paginator 10).Pages }}
+{{ .Render "li" }}
+{{ end }}
 
-  {{ partial "pagenation" . }}
+{{ partial "pagenation" . }}
 
-  {{ partial "advertise" . }}
+{{ partial "advertise" . }}
 
-  {{ partial "tagCloud" . }}
+{{ partial "tagCloud" . }}
 
-  {{ partial "advertise" . }}
+{{ partial "advertise" . }}
 {{ end }}
