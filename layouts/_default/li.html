@@ -2,8 +2,20 @@
   <a href="{{ .Permalink }}" class="article__link">
     <h1 class="article__title -list">{{ .Title }}</h1>
     <p class="article__desc">{{ .Params.description }}</p>
-    <p class="article__date -list"><time
-        datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Lastmod.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}</time>
+    <p class="article__date -list">
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+        <svg class="icon -date">
+          <use xlink:href="#icon-calendar" /></svg>
+        {{ .Date.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}
+      </time>
+      {{ if not (eq .Date.Unix .Lastmod.Unix) }}
+      &nbsp;
+      <time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+        <svg class="icon -date">
+          <use xlink:href="#icon-rotate-left" /></svg>
+        {{ .Lastmod.Format ( .Site.Params.dateformat | default "Jan 2, 2006") }}
+      </time>
+      {{ end }}
     </p>
   </a>
 </article>
