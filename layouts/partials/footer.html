@@ -2,7 +2,7 @@
   <ul class="socialList">
     {{ with .OutputFormats.Get "rss" -}}
     <li class="socialList__item">
-      {{ printf `<a href="%s" rel="%s"><svg class="icon -small"><use xlink:href="#icon-feed" /></svg></a>` .Rel .Permalink | safeHTML }}
+      {{ printf `<a href="%s" rel="%s"><svg class="icon -small"><use xlink:href="#icon-feed" /></svg></a>` .Permalink .Rel | safeHTML }}
     </li>
     {{ end -}}
     <li class="socialList__item"><a href="https://twitter.com/nismit_" target="_blank"><svg class="icon -small">
