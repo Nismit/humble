@@ -8,6 +8,10 @@
   border: 1px solid #ddd;
   padding: 1em;
 
+  &__desc p {
+    line-height: 1.7;
+  }
+
   @media screen and (min-width: 48em) {
     display: flex;
 

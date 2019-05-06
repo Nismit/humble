@@ -121,6 +121,11 @@
   }
 
   // Typography
+  p {
+    line-height: 1.7;
+    margin-bottom: 1.45rem;
+  }
+
   strong {
     background: linear-gradient(transparent 70%, #69d2e7 70%);
   }
@@ -143,6 +148,10 @@
   ul {
     list-style-type: disc;
     margin-left: 1.25rem;
+
+    li {
+      margin-bottom: 0.7rem;
+    }
   }
 
   // Table
