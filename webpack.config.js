@@ -50,12 +50,7 @@ module.exports = (env, argv) => ({
               sourceMap: argv.mode === 'production' ? false : true,
               plugins: [
                 // https://github.com/postcss/autoprefixer#options
-                require('autoprefixer')({
-                  grid: true, // CSS Grid Layout
-                  'browsers': [
-                    'IE 10'
-                  ]
-                })
+                require('autoprefixer')({ grid: true })
               ]
             }
           },
