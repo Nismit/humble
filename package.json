@@ -1,6 +1,6 @@
 {
   "name": "humble",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Development Environment for Humble",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,14 @@
   },
   "author": "Nismit <nismit.dev@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nismit/humble.git"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11"
+  ],
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
