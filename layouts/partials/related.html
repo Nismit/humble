@@ -11,7 +11,7 @@
         {{ with .Params.eyecatch }}
         <img src="{{ $.Site.BaseURL }}{{ . }}" alt="thumbnail">
         {{ else }}
-        <img src="{{ $.Site.BaseURL }}no-image.jpg" alt="thumbnail">
+        <img src="{{ $.Site.BaseURL }}/no-image.jpg" alt="thumbnail">
         {{ end }}
         <span>{{ .Title }}</span>
       </a>
