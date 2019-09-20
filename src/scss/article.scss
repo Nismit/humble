@@ -6,9 +6,6 @@
 .article {
   margin: 0 1em;
 
-  &.-list {
-  }
-
   &__link {
     display: block;
     padding: 1.3em 0;
@@ -80,9 +77,16 @@
     &__item {
       display: inline-block;
       margin-left: .3rem;
+      border: 1px solid #ddd;
+      padding-left: .2em;
+      padding-right: .5em;
 
       &:first-child {
         margin-left: 0;
+      }
+
+      a {
+        text-transform: capitalize;
       }
     }
   }
