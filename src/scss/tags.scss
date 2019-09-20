@@ -7,7 +7,7 @@
   margin: 1.5em 1em;
 
   &__title {
-
+    margin-bottom: .5em;
   }
 
   &__list {
@@ -26,7 +26,7 @@
     position: relative;
     outline: none;
     transition: all .2s;
-    // color: $_base-font-color;
+    text-transform: capitalize;
     color: $_primary-font-color;
 
     &:before, &:after {
