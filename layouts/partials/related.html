@@ -9,9 +9,13 @@
     <li class="related-articles--container">
       <a href="{{ .RelPermalink }}" class="related-articles--item">
         {{ with .Params.eyecatch }}
-        <img src="{{ $.Site.BaseURL }}{{ . }}" alt="thumbnail">
+        <div>
+          <img src="{{ $.Site.BaseURL }}{{ . }}" alt="thumbnail">
+        </div>
         {{ else }}
-        <img src="{{ $.Site.BaseURL }}/no-image.jpg" alt="thumbnail">
+        <div>
+          <img src="{{ $.Site.BaseURL }}/no-image.jpg" alt="thumbnail">
+        </div>
         {{ end }}
         <span>{{ .Title }}</span>
       </a>
