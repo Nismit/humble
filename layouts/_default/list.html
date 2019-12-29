@@ -6,7 +6,7 @@
 {{ end }}
 
 {{ define "main" }}
-{{ $Paginator := .Paginate (where .Data.Pages "Type" "post") }}
+{{ $Paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
 {{ range (.Paginator 10).Pages }}
 {{ .Render "li" }}
 {{ end }}
