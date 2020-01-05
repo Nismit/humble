@@ -68,6 +68,20 @@
         list-style-type: circle;
       }
     }
+
+    ol {
+      list-style-type: decimal;
+      margin-left: 1.4rem;
+
+      & ol ol {
+        display: none;
+      }
+
+      li ol > li {
+        display: block;
+        list-style-type: circle;
+      }
+    }
   }
 
   &__tags {
