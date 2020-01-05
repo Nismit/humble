@@ -73,11 +73,11 @@
       list-style-type: decimal;
       margin-left: 1.4rem;
 
-      & ol ol {
+      ol {
         display: none;
       }
 
-      li ol > li {
+      &:first-child > li > ol {
         display: block;
         list-style-type: circle;
       }
