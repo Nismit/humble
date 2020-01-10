@@ -20,14 +20,14 @@
   &__link {
     display: inline-block;
     padding: .4em .8em;
-    border: 2px solid $_base-border-color;
+    border: 2px solid var(--main-border-color);
     font-size: .9rem;
     text-decoration: none;
     position: relative;
     outline: none;
     transition: all .2s;
     text-transform: capitalize;
-    color: $_primary-font-color;
+    color: var(--primary-font-color);
 
     &:before, &:after {
       content: '';
@@ -51,7 +51,7 @@
 
     &:hover {
       text-decoration: none;
-      color: $_tertiary-font-colors;
+      color: var(--tertiary-font-colors);
 
       &:before, &:after {
         width: 100%;
@@ -59,14 +59,14 @@
       }
 
       &:before {
-        border-bottom-color: $_tertiary-font-colors;
-        border-left-color: $_tertiary-font-colors;
+        border-bottom-color: var(--tertiary-font-colors);
+        border-left-color: var(--tertiary-font-colors);
         transition: height .3s, width .3s .3s;
       }
 
       &:after {
-        border-top-color: $_tertiary-font-colors;
-        border-right-color: $_tertiary-font-colors;
+        border-top-color: var(--tertiary-font-colors);
+        border-right-color: var(--tertiary-font-colors);
         transition: height .3s, width .3s .3s;
       }
     }

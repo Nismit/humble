@@ -10,6 +10,7 @@
   &.-small {
     width: 22px;
     height: 22px;
+    fill: var(--main-font-color);
   }
 
   &.-ex-small {
@@ -22,6 +23,7 @@
     height: 17px;
     position: relative;
     top: 2px;
+    fill: var(--main-font-color);
   }
 
   &.-logo {
@@ -29,6 +31,7 @@
     height: 80px;
     position: relative;
     top: 7px;
+    fill: var(--main-font-color);
   }
 
   &.-heart {
@@ -40,6 +43,7 @@
     height: 17px;
     position: relative;
     top: 3px;
+    fill: var(--main-font-color);
   }
 
   &.-share {

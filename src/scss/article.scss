@@ -9,10 +9,12 @@
   &__link {
     display: block;
     padding: 1.3em 0;
-    border-bottom: 1px solid $_base-border-color;
-    color: $_base-font-color;
+    border-bottom: 1px solid var(--main-border-color);
+    color: var(--main-font-color);
+    transition: all 350ms;
 
     &:hover {
+      opacity: 0.8;
       text-decoration: none;
     }
   }
@@ -47,7 +49,7 @@
   &__toc {
     margin: 1.3rem auto;
     padding: .5rem;
-    border: 1px solid $_base-border-color;
+    border: 1px solid var(--main-border-color);
 
     &__title {
       text-align: center;
@@ -91,7 +93,7 @@
     &__item {
       display: inline-block;
       margin-left: .3rem;
-      border: 1px solid #ddd;
+      border: 1px solid var(--main-border-color);
       padding-left: .2em;
       padding-right: .5em;
 
@@ -112,7 +114,7 @@
     padding-bottom: .10em;
     margin-top: 2em;
     margin-bottom: .8em;
-    border-bottom: 4px solid $_secondly-font-color;
+    border-bottom: 4px solid var(--secondly-font-color);
     font-size: 1.45rem;
     line-height: 1.5;
   }
@@ -121,7 +123,7 @@
     padding: .25em 0 .25em .45em;
     margin-top: 1.8em;
     margin-bottom: .8em;
-    border-left: 6px solid $_secondly-font-color;
+    border-left: 6px solid var(--secondly-font-color);
     font-size: 1.35rem;
     line-height: 1.5;
   }
@@ -145,7 +147,7 @@
   }
 
   strong {
-    background: linear-gradient(transparent 70%, #69d2e7 70%);
+    background: linear-gradient(transparent 70%, var(--strong-background-color) 70%);
   }
 
   // Image
@@ -175,12 +177,12 @@
   // Table
   table {
     width: 100%;
-    border: 1px solid $_base-border-color;
+    border: 1px solid var(--main-border-color);
     border-collapse: collapse;
     margin: 1.3em 0;
 
     th, td {
-      border: 1px solid $_base-border-color;
+      border: 1px solid var(--main-border-color);
       padding: .3em .5em;
     }
   }
@@ -193,7 +195,7 @@
     padding: 0 1rem;
 
     &:before, &:after {
-      color: rgba(51,51,51,0.1);
+      color: var(--blockquote-color);
       font-size: 8rem;
       font-style: normal;
     }
@@ -202,14 +204,14 @@
       content: '“';
       position: absolute;
       left: 0;
-      top: 0;
+      top: -4rem;
     }
 
     &:after {
       content: '”';
       position: absolute;
       right: 0;
-      bottom: -60%;
+      bottom: -7rem;
     }
   }
 
@@ -218,7 +220,7 @@
     padding: 0.2em 0.4em;
     margin: 0;
     font-size: 85%;
-    background-color: rgba(27,31,35,0.05);
+    background-color: var(--code-background-color);
     border-radius: 3px;
   }
 
@@ -228,7 +230,7 @@
     overflow: auto;
     font-size: 85%;
     line-height: 1.5;
-    background-color: #f6f8fa;
+    background-color: var(--pre-background-color);
     border-radius: 3px;
 
     > code {
