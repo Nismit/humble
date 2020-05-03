@@ -35,8 +35,6 @@
   </div>
   {{ end }}
 
-  {{ partial "sub-advertise" . }}
-
   <div class="article__body">
     {{ .Content }}
   </div>
@@ -52,8 +50,9 @@
   </div>
   {{ end }}
 
-
   {{ partial "share" . }}
+
+  {{ partial "tips" . }}
 
   {{ partial "author" . }}
 </article>
