@@ -8,7 +8,7 @@
 {{ define "main" }}
 {{ $Paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
 {{ range (.Paginator 10).Pages }}
-{{ .Render "li" }}
+{{ .Render "summary" }}
 {{ end }}
 
 {{ partial "pagenation" . }}

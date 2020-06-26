@@ -2,7 +2,7 @@
 <h1 style="text-align: center;">Tag: {{ .Title }}</h1>
 
 {{ range (.Paginator 10).Pages }}
-{{ .Render "li" }}
+{{ .Render "summary" }}
 {{ end }}
 
 {{ partial "pagenation" . }}
