@@ -1,10 +1,13 @@
-<div class="tagBlock">
-  <h2 class="tagBlock__title">Tags</h2>
-  <ul class="tagBlock__list" role="navigation">
+<section class="tagCloud">
+
+  <h2 class="tagCloud__title">Tags</h2>
+
+  <ul class="tagCloud__list" role="navigation">
     {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-    <li class="tagBlock__list__item">
-      <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" class="tagBlock__link">{{ $name }}</a>
+    <li class="tagCloud__list__item">
+      <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" class="tagCloud__link">{{ $name }}</a>
     </li>
     {{ end }}
   </ul>
-</div>
+  
+</section>
