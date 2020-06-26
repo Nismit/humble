@@ -1,25 +1,25 @@
 <footer>
-  <ul class="socialList">
+  <ul class="footer__social">
     {{ with .OutputFormats.Get "rss" -}}
-    <li class="socialList__item">
+    <li class="footer__social__item">
       {{ printf `<a href="%s" rel="%s"><svg class="icon -small"><use xlink:href="#icon-feed" /></svg></a>` .Permalink .Rel | safeHTML }}
     </li>
     {{ end -}}
-    <li class="socialList__item"><a href="https://twitter.com/nismit_" target="_blank" rel="noopener noreferrer"><svg
+    <li class="footer__social__item"><a href="https://twitter.com/nismit_" target="_blank" rel="noopener noreferrer"><svg
           class="icon -small">
           <use xlink:href="#icon-twitter" /></svg></a></li>
-    <li class="socialList__item"><svg class="icon -small -heart">
+    <li class="footer__social__item"><svg class="icon -small -heart">
         <use xlink:href="#icon-heart" /></svg></li>
-    <li class="socialList__item"><a href="https://github.com/Nismit" target="_blank" rel="noopener noreferrer"><svg
+    <li class="footer__social__item"><a href="https://github.com/Nismit" target="_blank" rel="noopener noreferrer"><svg
           class="icon -small">
           <use xlink:href="#icon-github" /></svg></a></li>
-    <li class="socialList__item"><a href="https://ca.linkedin.com/in/nismit" target="_blank"
+    <li class="footer__social__item"><a href="https://ca.linkedin.com/in/nismit" target="_blank"
         rel="noopener noreferrer"><svg class="icon -small">
           <use xlink:href="#icon-linkedin" /></svg></a></li>
   </ul>
 
   <p class="copyright">&copy; 2017 -
-    <script>document.write(new Date().getFullYear());</script> NISLOG<br>
+    <script>document.write(new Date().getFullYear());</script> {{ .Site.Copyright }}<br>
     Created with <svg class="icon -ex-small -heart">
       <use xlink:href="#icon-heart" /></svg> | Powered by <a href="https://gohugo.io/" tagert="_blank"
       rel="noopener noreferrer">Hugo</a></p>
