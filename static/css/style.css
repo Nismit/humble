@@ -314,5 +314,56 @@ main {
   width: 100%;
   max-width: 45em; }
 
+ion-icon {
+  width: 16px;
+  height: 16px; }
+
+.footer__social {
+  text-align: center; }
+  .footer__social__item {
+    padding: .3rem .8rem;
+    display: inline-block; }
+    .footer__social__item svg {
+      width: 22px;
+      height: 22px;
+      fill: var(--main-font-color); }
+    .footer__social__item a {
+      -webkit-transition: all 350ms;
+      transition: all 350ms; }
+      .footer__social__item a:hover {
+        opacity: 0.7; }
+
+.copyright {
+  font-size: .8rem;
+  text-align: center; }
+  .copyright svg {
+    width: 15px;
+    height: 12px;
+    fill: #da001e; }
+
+.post {
+  margin: 0 1rem; }
+  .post__link {
+    display: block;
+    padding: 1.3rem 0;
+    text-decoration: none;
+    color: var(--main-font-color);
+    border-bottom: 1px solid var(--main-border-color);
+    -webkit-transition: all 350ms;
+    transition: all 350ms; }
+    .post__link:hover {
+      opacity: 0.8; }
+  .post__desc {
+    margin-top: .5em;
+    margin-bottom: .5em; }
+  .post__date {
+    margin: 0;
+    font-size: .9rem; }
+    .post__date__icon {
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      vertical-align: text-bottom; }
+
 
 /*# sourceMappingURL=style.css.map*/

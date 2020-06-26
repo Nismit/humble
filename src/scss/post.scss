@@ -1,0 +1,33 @@
+.post {
+    margin: 0 1rem;
+
+    &__link {
+        display: block;
+        padding: 1.3rem 0;
+        text-decoration: none;
+        color: var(--main-font-color);
+        border-bottom: 1px solid var(--main-border-color);
+        transition: all 350ms;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__desc {
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+
+    &__date {
+        margin: 0;
+        font-size: .9rem;
+
+        &__icon {
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            vertical-align: text-bottom;
+        }
+    }
+}
