@@ -1,4 +1,4 @@
-{{ if .Site.Params.author }}
+{{ if .Site.Params.authorModule }}
   <section class="author">
     <div class="author__picture--wrapper">
       <svg class="author__picture">
@@ -19,14 +19,14 @@
     </div>
     <div>
       <div class="author__desc">
-        <h3>{{ .Site.Params.authorName | safeHTML }}</h3>
+        <h3>{{ .Site.Params.author | safeHTML }}</h3>
 
         <p>{{ .Site.Params.authorDescription | safeHTML }}</p>
 
         <ul class="author__social">
-          <li class="author__social__item"><a href="https://twitter.com/nismit_" target="_blank"><svg class="icon -small">
+          <li class="author__social__item"><a href="{{ .Site.Params.twitter }}" target="_blank"><svg class="icon -small">
                 <use xlink:href="#icon-twitter" /></svg></a></li>
-          <li class="author__social__item"><a href="https://github.com/Nismit" target="_blank"><svg class="icon -small">
+          <li class="author__social__item"><a href="{{ .Site.Params.github }}" target="_blank"><svg class="icon -small">
                 <use xlink:href="#icon-github" /></svg></a></li>
         </ul>
       </div>
