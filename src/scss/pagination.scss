@@ -1,0 +1,55 @@
+.pagination {
+    margin: 2rem 0;
+    text-align: center;
+
+    &__item {
+        display: inline-block;
+    }
+
+    &__link {
+        padding: .5em .8em;
+        text-decoration: none;
+        transition: all 350ms;
+        border: 1px solid var(--main-border-color);
+
+        &:hover {
+            color: var(--pager-link-color);
+            background-color: var(--tertiary-font-colors);
+        }
+    }
+
+    .active > &__link {
+        color: var(--pager-link-color);
+        background-color: var(--tertiary-font-colors);
+    }
+}
+
+.pagination-single {
+    margin: 0 1rem 2rem;
+
+    &__item {
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        transition: all 350ms;
+        border-bottom: 1px solid var(--main-border-color);
+
+        &:first-child {
+            border-top: 1px solid var(--main-border-color);
+        }
+
+        &:hover {
+            text-decoration: none;
+            background-color: var(--pager-hover-color);
+        }
+    }
+
+    &__label {
+        margin: 0;
+        color: var(--main-font-color);
+    }
+
+    &__title {
+        margin: 0;
+    }
+}

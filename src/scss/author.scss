@@ -1,0 +1,53 @@
+.author {
+    padding: 1em;
+    margin: 3rem 0 2rem;
+    border: 1px solid var(--main-border-color);
+
+    &__desc p {
+        line-height: 1.7;
+    }
+
+    &__social {
+        &__item {
+            a {
+                transition: all 350ms;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+    &__picture {
+        width: 150px;
+        height: 150px;
+
+        &--wrapper {
+            text-align: center;
+        }
+    }
+
+    &__social {
+        padding: 0;
+
+        &__item {
+            display: inline-block;
+            padding: .5em .8em 0 0;
+
+            svg {
+                width: 22px;
+                height: 22px;
+                fill: var(--main-font-color);
+            }
+        }
+    }
+
+    @media screen and (min-width: 48em) {
+        display: flex;
+
+        &__desc {
+            padding-left: 1.5rem;
+        }
+    }
+}
