@@ -46,28 +46,16 @@
             margin: .3rem auto;
         }
 
-        ul {
-            list-style-type: decimal;
+        ul, ol {
+            padding-left: 0;
             margin-left: 1.4rem;
+            list-style-type: decimal;
     
-            ul {
+            ul, ol {
                 display: none;
             }
     
-            &:first-child > li > ul {
-                display: block;
-                list-style-type: circle;
-            }
-        }
-
-        ol {
-            list-style-type: decimal;
-            margin-left: 1.4rem;
-    
-            ol {
-                display: none;
-            }
-    
+            &:first-child > li > ul,
             &:first-child > li > ol {
                 display: block;
                 list-style-type: circle;
