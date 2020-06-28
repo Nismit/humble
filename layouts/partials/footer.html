@@ -5,15 +5,15 @@
       {{ printf `<a href="%s" rel="%s"><svg class="icon -small"><use xlink:href="#icon-feed" /></svg></a>` .Permalink .Rel | safeHTML }}
     </li>
     {{ end -}}
-    <li class="footer__social__item"><a href="https://twitter.com/nismit_" target="_blank" rel="noopener noreferrer"><svg
+    <li class="footer__social__item"><a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener noreferrer"><svg
           class="icon -small">
           <use xlink:href="#icon-twitter" /></svg></a></li>
     <li class="footer__social__item"><svg class="icon -small -heart">
         <use xlink:href="#icon-heart" /></svg></li>
-    <li class="footer__social__item"><a href="https://github.com/Nismit" target="_blank" rel="noopener noreferrer"><svg
+    <li class="footer__social__item"><a href="{{ .Site.Params.github }}" target="_blank" rel="noopener noreferrer"><svg
           class="icon -small">
           <use xlink:href="#icon-github" /></svg></a></li>
-    <li class="footer__social__item"><a href="https://ca.linkedin.com/in/nismit" target="_blank"
+    <li class="footer__social__item"><a href="{{ .Site.Params.linkedin }}" target="_blank"
         rel="noopener noreferrer"><svg class="icon -small">
           <use xlink:href="#icon-linkedin" /></svg></a></li>
   </ul>
