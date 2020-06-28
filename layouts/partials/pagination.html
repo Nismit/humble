@@ -3,8 +3,8 @@
 <nav role="navigation">
   <ul class="pagination">
     {{ range $pag.Pagers }}
-    <li class="pagination__item {{ if eq . $pag }}active{{ end }}"><a href="{{ .URL }}"
-        class="pagination__link">{{ .PageNumber }}</a></li>
+    <li class="pagination__item {{ if eq . $pag }}active{{ end }}">
+      <a href="{{ .URL }}" class="pagination__link">{{ .PageNumber }}</a></li>
     {{ end }}
   </ul>
 </nav>
