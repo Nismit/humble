@@ -13,19 +13,28 @@
         border: 1px solid var(--main-border-color);
 
         &:hover {
-            color: var(--pager-link-color);
-            background-color: var(--tertiary-font-colors);
+            color: var(--body-background-color);
+            background-color: var(--secondly-link-color);
         }
     }
 
     .active > &__link {
-        color: var(--pager-link-color);
-        background-color: var(--tertiary-font-colors);
+        color: var(--body-background-color);
+        background-color: var(--secondly-link-color);
     }
 }
 
 .pagination-single {
     margin: 0 1rem 2rem;
+
+    &__label {
+        margin: 0;
+        color: var(--body-font-color);
+    }
+
+    &__title {
+        margin: 0;
+    }
 
     &__item {
         display: block;
@@ -41,15 +50,10 @@
         &:hover {
             text-decoration: none;
             background-color: var(--pager-hover-color);
+
+            .pagination-single__label {
+                color: var(--body-font-color);
+            }
         }
-    }
-
-    &__label {
-        margin: 0;
-        color: var(--main-font-color);
-    }
-
-    &__title {
-        margin: 0;
     }
 }
