@@ -2,7 +2,7 @@
     margin: 0 1em;
 
     &__title {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         margin-bottom: .5em;
 
         &.-list {
@@ -98,7 +98,7 @@
         margin-top: 2em;
         margin-bottom: .8em;
         border-bottom: 4px solid var(--secondly-font-color);
-        font-size: 1.45rem;
+        font-size: 1.6rem;
         line-height: 1.5;
     }
 
@@ -107,20 +107,20 @@
         margin-top: 1.8em;
         margin-bottom: .8em;
         border-left: 6px solid var(--secondly-font-color);
-        font-size: 1.35rem;
+        font-size: 1.45rem;
         line-height: 1.5;
     }
 
     h3 {
         margin-top: 1.4em;
         margin-bottom: .8em;
-        font-size: 1.25rem;
+        font-size: 1.36rem;
     }
 
     h4 {
         margin-top: .5em;
         margin-bottom: .5em;
-        font-size: 1.15rem;
+        font-size: 1.28rem;
     }
 
     // Typography
@@ -130,8 +130,7 @@
     }
 
     strong {
-        color: var(--strong-font-color);
-        background: linear-gradient(transparent 70%, var(--strong-background-color) 70%);
+        background: linear-gradient(transparent 70%, var(--highlight-color) 70%);
     }
 
     // Image
@@ -148,15 +147,6 @@
             content: "*\a0\a0\a0*\a0\a0\a0*";
         }
     }
-
-    // ul {
-    //     list-style-type: disc;
-    //     margin-left: 1.25rem;
-
-    //     li {
-    //         margin-bottom: 0.7rem;
-    //     }
-    // }
 
     // Table
     table {
@@ -176,34 +166,16 @@
         font-style: italic;
         position: relative;
         margin: 2.5rem 0;
+        margin-left: 1rem;
         padding: 0 1rem;
-
-        &:before, &:after {
-            color: var(--blockquote-color);
-            font-size: 8rem;
-            font-style: normal;
-        }
-
-        &:before {
-        content: '“';
-            position: absolute;
-            left: 0;
-            top: -4rem;
-        }
-
-        &:after {
-        content: '”';
-            position: absolute;
-            right: 0;
-            bottom: -7rem;
-        }
+        border-left: 5px solid var(--body-font-color);
     }
 
     // Code
     code {
         padding: 0.2em 0.4em;
         margin: 0;
-        font-size: 85%;
+        font-size: 90%;
         background-color: var(--code-background-color);
         border-radius: 3px;
     }
@@ -212,10 +184,10 @@
     pre {
         padding: 16px;
         overflow: auto;
-        font-size: 85%;
+        font-size: 90%;
         line-height: 1.5;
         background-color: var(--pre-background-color);
-        border-radius: 3px;
+        border-radius: 5px;
 
         > code {
             padding: 0;

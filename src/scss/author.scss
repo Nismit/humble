@@ -30,6 +30,7 @@
 
     &__social {
         padding: 0;
+        margin-bottom: 0;
 
         &__item {
             display: inline-block;
@@ -38,7 +39,7 @@
             svg {
                 width: 22px;
                 height: 22px;
-                fill: var(--main-font-color);
+                fill: var(--body-font-color);
             }
         }
     }
