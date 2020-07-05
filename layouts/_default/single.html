@@ -23,7 +23,7 @@
 
   {{ if .Params.eyecatch }}
   <div class="article__thumbnail">
-    <img src="{{ .Site.BaseURL }}{{ .Params.eyecatch }}" />
+    <img src="{{ .Site.BaseURL }}{{ .Params.eyecatch }}" width="688" height="361" />
   </div>
   {{ end }}
 
@@ -41,6 +41,7 @@
   {{ with .Params.tags }}
   <div class="article__tags">
     <ul>
+      <li><span><ion-icon name="pricetags-outline"></ion-icon></span></li>
       {{ range . }}
       <li class="article__tags__item"><a href="{{ "/tags/" | relLangURL }}{{ lower . }}/">{{ . }}</a></li>
       {{ end }}
