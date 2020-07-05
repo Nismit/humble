@@ -31,6 +31,7 @@
     &__thumbnail {
         img {
             height: auto;
+            width: 100%;
             max-width: 100%;
         }
     }
@@ -72,20 +73,34 @@
             list-style-type: none;
         }
 
+        li:first-child {
+            display: inline-block;
+
+            ion-icon {
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+            }
+        }
+
         &__item {
             display: inline-block;
             margin-left: .3rem;
             padding-left: .2em;
             padding-right: .5em;
-            border: 1px solid var(--main-border-color);
+            
     
             &:first-child {
                 margin-left: 0;
             }
     
             a {
+                display: inline-block;
                 text-decoration: none;
                 text-transform: capitalize;
+                padding: 1px 7px;
+                border-radius: 6px;
+                border: 1px solid var(--main-border-color);
             }
         }
     }
