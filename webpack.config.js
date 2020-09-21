@@ -47,16 +47,20 @@ module.exports = (env, argv) => ({
           {
             loader: 'postcss-loader',
             options: {
-              sourceMap: argv.mode === 'production' ? false : true,
-              plugins: [
-                // https://github.com/postcss/autoprefixer#options
-                require('autoprefixer')({ grid: true })
-              ]
-            }
+                sourceMap: argv.mode === 'production' ? false : true,
+                postcssOptions: {
+                    plugins: [
+                        require('autoprefixer')({
+                            grid: true // CSS Grid Layout
+                        })
+                    ],
+                },
+            },
           },
           {
             loader: 'sass-loader',
             options: {
+              implementation: require('sass'),
               sourceMap: argv.mode === 'production' ? false : true
             }
           }
