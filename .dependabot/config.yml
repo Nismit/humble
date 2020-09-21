@@ -1,7 +1,11 @@
-version: 1
-update_configs:
-  - package_manager: "javascript"
+version: 2
+updates:
+  - package-ecosystem: "npm"
     directory: "/"
-    update_schedule: "weekly"
-    default_reviewers:
-    - "Nismit"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+      time: "20:00"
+      timezone: "America/Vancouver"
+    reviewers:
+      - "Nismit"
