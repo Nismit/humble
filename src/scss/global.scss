@@ -2,7 +2,7 @@
     --body-background-color: #fefefe;
     --body-font-color: #333;
     --secondly-font-color: #247ba0;
-    --primary-link-color: #8aa2d3; 
+    --primary-link-color: #8aa2d3;
     --secondly-link-color: #736dac;
     --highlight-color: #69d2e7;
     --code-background-color: rgba(36, 46, 56, 0.15);
@@ -72,31 +72,35 @@ ion-icon {
 
 .advertisement {
     margin: 3rem 1rem;
-  
+
     &--sub {
-      margin: 1rem;
+        margin: 1rem;
     }
 }
 
-.footer__social {
-    padding-left: 0;
-    text-align: center;
+footer {
+    padding-bottom: 1rem;
 
-    &__item {
-        padding: .3rem .8rem;
-        display: inline-block;
+    .footer__social {
+        padding-left: 0;
+        text-align: center;
 
-        svg {
-            width: 22px;
-            height: 22px;
-            fill: var(--body-font-color);
-        }
+        &__item {
+            padding: .3rem .8rem;
+            display: inline-block;
 
-        a {
-            transition: all 350ms;
+            svg {
+                width: 22px;
+                height: 22px;
+                fill: var(--body-font-color);
+            }
 
-            &:hover {
-                opacity: 0.7;
+            a {
+                transition: all 350ms;
+
+                &:hover {
+                    opacity: 0.7;
+                }
             }
         }
     }
